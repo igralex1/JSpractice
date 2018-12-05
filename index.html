@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript Practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-<div class="block">
-    <input type="checkbox" id="one" onchange="funcChkbox()">
-</div>
 
-<div class="block">
-    <!--input*3-->
-    <!--многокурсорность ALT + J (windows)-->
-    <input type="radio" name="r1" value="5"> 0
-    <input type="radio" name="r1" value="544"> 1
-    <input type="radio" name="r1" value="54455"> 2
-    <button onClick="funcRadio()"> Проверить какой элемент выбран</button>
+<div class="block Navigate">
+        <nav id="nav">
+        <div class="menu-item">Меню 1
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+        </div>
+        <div class="menu-item"> Меню 2
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+        </div>
+        <div class="menu-item">Меню 3
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+            <div class="submenu">Подменю</div>
+        </div>
+    </nav>
 </div>
-<div class="block">
+<div class="block rngBlockRadius" >
+    <p>Верхний левый угол
+        <input type="range" id="radiusLeftUp" min="0" max="200" step="1" oninput="funcRngBorderRadius()" >
+        <input type="text" id="textRadiusLeftUp" value="0">
+    </p>
+    <p>Верхний правый угол
+        <input type="range" id="radiusRightUp" min="0" max="200" step="1" oninput="funcRngBorderRadius()" >
+        <input type="text" id="textRadiusRightUp" value="0">
+    </p>
+
+    <p>Нижний левый угол
+        <input type="range" id="radiusLeftDown" min="0" max="200" step="1" oninput="funcRngBorderRadius()" >
+        <input type="text" id="textRadiusLeftDown" value="0">
+    </p>
+    <p>Нижний правый угол
+        <input type="range" id="radiusRightDown" min="0" max="200" step="1" oninput="funcRngBorderRadius()" >
+        <input type="text" id="textRadiusRightDown" value="0">
+    </p>
+    <div id="b"></div>
+</div>
+<div class="block Fruit">
     <select name="" id="selectFruit" onchange="funcSelect()">
         <option value="1">Kiwi</option>
         <option value=" ">Cherry</option>
@@ -35,11 +70,26 @@
         <option value=" ">Water-melon</option>
     </select>
 </div>
-
-<div class="block">
+<div class="block Range">
     <input type="range" min="o" max="100" step="1" id="range" oninput="funRange()">
     <p id="rangeNumber"></p>
 </div>
+<div class="block Radio">
+    <!--input*3-->
+    <!--многокурсорность ALT + J (windows)-->
+    <input type="radio" name="r1" value="5"> 0
+    <input type="radio" name="r1" value="544"> 1
+    <input type="radio" name="r1" value="54455"> 2
+    <button onClick="funcRadio()"> Проверить какой элемент выбран</button>
+</div>
+<div class="block Checkbox">
+    <input type="checkbox" id="one" onchange="funcChkbox()">
+</div>
+
+
+
+
+
 
 
     

@@ -1,4 +1,23 @@
 .block{
     display:block ;
+}
 
+#b {
+    width: 200px;
+    height: 200px;
+    background: #3daa3d;
+}
+
+.menu-item{
+    border: 2px solid #7c2caa;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.menu-item .submenu{
+    height: 40px;
+    width: 140px;
+    background: #cccc36;
+    position: absolute;
+    cursor:pointer;
 }
