@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+<div class="block">
+    <input type="checkbox" id="one" onchange="funcChkbox()">
+</div>
+
+<div class="block">
+    <!--input*3-->
+    <!--многокурсорность ALT + J (windows)-->
+    <input type="radio" name="r1" value="5"> 0
+    <input type="radio" name="r1" value="544"> 1
+    <input type="radio" name="r1" value="54455"> 2
+    <button onClick="funcRadio()"> Проверить какой элемент выбран</button>
+</div>
+<div class="block">
+    <select name="" id="selectFruit" onchange="funcSelect()">
+        <option value="1">Kiwi</option>
+        <option value=" ">Cherry</option>
+        <option value=" ">Lemon</option>
+        <option value=" ">Apple</option>
+        <option value=" ">Melon</option>
+        <option value=" ">Pineapple</option>
+        <option value=" ">Mango</option>
+        <option value=" ">Apricon</option>
+        <option value=" ">Granate</option>
+        <option value=" ">Coconut</option>
+        <option value=" ">Plum</option>
+        <option value=" ">Peach</option>
+        <option value=" ">Pear</option>
+        <option value=" ">Water-melon</option>
+    </select>
+</div>
+
+<div class="block">
+    <input type="range" min="o" max="100" step="1" id="range" oninput="funRange()">
+    <p id="rangeNumber"></p>
+</div>
+
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
